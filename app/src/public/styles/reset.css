@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+/* default */
+body{font-family: 'Noto Sans KR', sans-serif; color:#000; font-size:17px; font-weight:300; padding:0px; margin:0px; line-height:1.5; background-color:#fff; letter-spacing:-0.1px; word-break:keep-all;}
+
+html{overflow-y:scroll;}
+html, body{width:100%;height:100%;}
+
+div, p, ul, li,ol, table, th, td, textarea, input, span, form, h1, h2, h3, h4, h5, h6, dt, dl, dd, em, sup {padding:0px; margin:0px; vertical-align:top;}
+ul, ol, dl, dd, dt, li {list-style-type:none;}
+form, fieldset{margin:0; padding:0; border:0;}
+table, tbody, tfoot, thead, tr, th, td{border-collapse:collapse; border-spacing:0;} 
+
+/*border:none; separate*/
+/* 6 */* html table, tbody, tfoot, thead, tr, th, td {border-collapse:collapse;}
+/* 7 */* + html table, tbody, tfoot, thead, tr, th, td {border-collapse:collapse;}
+
+legend{display:none; position:absolute; visibility:hidden}
+caption{visibility:hidden; width:0px; height:0px; overflow:hidden; font-size:0px; margin:0px; padding:0px; line-height:0px;}
+img {border:0; vertical-align:middle; outline:none}
+optgroup {font-style:normal; font-size:0px; height:0px; line-height:0px}
+input {vertical-align:middle;}
+select {vertical-align:middle;}
+textarea {font-size:14px; font-weight:400;}
+img, fieldset {border:0 none transparent;/*'transparent' for Opera7*/}
+i, em {font-style:normal;}
+span{letter-spacing:normal}
+
+/* html5 ie9 else */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+   display:block;
+   padding:0;
+   margin:0
+}
+div{box-sizing:border-box;}
+input[type="radio"]{border:none transparent}
+input[type="text"]{border:1px solid #ddd}
+input[type="password"]{border:1px solid #ddd}
+
+/* a��ũ */
+a {text-decoration:none; cursor:pointer; color:#04050c}
+a:link, a:visited {text-decoration:none}
+a:hover{text-decoration:none; color:#04050c}
+
+
+body{font-size:16px}
