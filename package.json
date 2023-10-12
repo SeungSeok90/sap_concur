@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  },
+  "name": "sap_concur",
+  "version": "1.0.0",
+  "main": "app.js",
+  "bin": {
+    "sap_concur": "bin/www.js"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./bin/www.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
