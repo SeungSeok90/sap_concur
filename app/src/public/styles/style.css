@@ -20,7 +20,12 @@ header{
     top: 10px;
 }
 .title{
-    
+    height: 100%;
+    position: relative;
+}
+.title>div:nth-of-type(1){
+    position: absolute;
+    top: 100px;
 }
 
 nav>ul{
@@ -158,9 +163,11 @@ table.agtb td .tbox{border-bottom:0px solid #f7f7f7;}
     background-image: url(/images/event1.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right;
 }
 #event ul>li:nth-of-type(2){
     background-color: rgb(130, 130, 130);
+    height: 360px;
 }
 #event ul>li:nth-of-type(3){
     background-color: rgb(70, 68, 68);
@@ -168,6 +175,52 @@ table.agtb td .tbox{border-bottom:0px solid #f7f7f7;}
 #event ul>li:nth-of-type(4){
     background-color: rgb(40, 40, 40);
 }
+#event .event-container{
+    position: relative;
+    height: 100%;
+}
+#event .event-container img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#event .event-container em{
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    background-color: aquamarine;
+    border-radius: 60px;
+    color: white;
+    text-align: center;
+}
+#event .event-container em:nth-of-type(1){
+    position: absolute;
+    bottom: 30px;
+    right: 120px;
+    z-index: 99;
+}
+#event .event-container em:nth-of-type(2){
+    position: absolute;
+    top: 0;
+}
+#event .event-container em:nth-of-type(3){
+    position: absolute;
+    bottom: 0;
+}
+#event dt{
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+#event dd{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
 
 
 #daumRoughmapContainer1696818382924{
