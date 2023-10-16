@@ -108,6 +108,7 @@ section{
 #speaker .cell{
     padding: 10px;
     font-size: 15px;
+    height: 135px;
 }
 
 
@@ -269,7 +270,7 @@ table.agtb td .tbox{border-bottom:0px solid #f7f7f7;}
     right: 10px;
 }
 #event .event-gift>li:nth-of-type(3) img{
-    top: 160px;
+    top: 250px;
     left: 20px;
     width: 100px;
 }
@@ -280,7 +281,6 @@ table.agtb td .tbox{border-bottom:0px solid #f7f7f7;}
     padding-top: 20px;
     padding-left: 20px;
 }
-
 #event dd{
     padding-top: 20px;
     padding-left: 20px;
@@ -296,6 +296,22 @@ table.agtb td .tbox{border-bottom:0px solid #f7f7f7;}
 #event .event-gift>li:nth-of-type(3)>.event-container:nth-of-type(1)>dd{color: white;}
 #event .event-gift>li:nth-of-type(4)>.event-container:nth-of-type(1)>dd{color: white;}
 #event .event-gift>li:nth-of-type(5)>.event-container:nth-of-type(1)>dd{color: #2A68B1;}
+
+#event p{
+    font-size: 0.8em;
+}
+#event em:nth-of-type(1){
+    color: white;
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+#event em:nth-of-type(2){
+    color: white;
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 40px;
+}
 
 
 #event .event-info{
