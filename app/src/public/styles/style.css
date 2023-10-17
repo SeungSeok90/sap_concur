@@ -316,6 +316,10 @@ table.agtb td .tbox{border-bottom:0px solid #f7f7f7;}
 #event .faq li label{width: 5%; display: block; float: left;}
 #event .faq li span{width: 95%; display: block; float: left;}
 
+#event .contact_info span{display: block; font-size: 18px; line-height: 20px;}
+#event .contact_info span a{
+    color: white;
+}
 
 #location .location-container{
     display: flex;
