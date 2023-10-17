@@ -49,3 +49,21 @@ s_info.forEach(function (li, idx){
         popups[idx].style.display = 'block';
     });
 });
+
+// 이미지 교체를 처리하는 함수
+function changeImage() {
+    const img = document.getElementById("title01");
+    
+    if (window.innerWidth < 480) {
+        img.src = "/images/m_title1.png"; // 화면 너비가 600px 미만이면 작은 이미지로 교체
+    } else {
+        img.src = "/images/title1.png"; // 화면 너비가 600px 이상이면 큰 이미지로 교체
+    }
+}
+
+// 페이지 로드 시 이미지 초기화
+window.addEventListener('load', changeImage);
+
+// 창의 크기가 변경될 때 이미지 변경
+window.addEventListener('resize', changeImage);
+
