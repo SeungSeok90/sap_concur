@@ -46,8 +46,8 @@ nav{
 }
 .logo{
     position: absolute;
-    right: 50px;
-    top: 50px;
+    right: 30px;
+    top: 30px;
 }
 .title{
     position: relative;
@@ -56,15 +56,45 @@ nav{
     position: absolute;
 }
 .title>div:nth-of-type(1){
-    top: 100px;
+    top: 80px;
     left: -60px;
 }
 .title>div:nth-of-type(2){
-    top: 300px;
+    top: 350px;
     left: 0;}
 .title>div:nth-of-type(3){
-    top: 400px;
+    top: 450px;
     left: 0;}
+.title>div:nth-of-type(4){
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    top: 280px;
+    left: 0;}
+
+.title>div .regi_btn-container{
+    position: relative;
+}
+.title>div:nth-of-type(3) .regi_btn{
+    position: absolute;
+    width: 320px;
+    height: 80px;
+    background-color: #126ca8;
+    color: white;
+    line-height: 80px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 80px;
+}
+.title>div:nth-of-type(3) .btn_bg{
+    position: absolute;
+    left: 200px;
+    width: 500px;
+    height: 80px;
+    border-radius: 0 80px 80px 0;
+    background: linear-gradient( to right,#126ca8, transparent);
+}
 .gnb{
     display: flex;
     justify-content: space-between;
@@ -168,13 +198,13 @@ table.agtb dd b{font-weight:500}
 .tbox dt{border-right:10px solid #f7f7f7;;padding:10px;padding-bottom:0px}
 .tbox dd{padding:10px}
 .tbox span{padding:10px}
-.tbox .img{position:absolute;right:10px;top:10px}
+.tbox .img{position:absolute;right:10px;top:10px;cursor:pointer;}
 table.agtb td .tbox{border-bottom:0px solid #f7f7f7;}
 
 
 .ntbox dt{border-right:0px solid #f7f7f7;}
 .ntbox dt.wid100{width:100% !important}
-.add_info{padding:10px;font-size:14px;font-weight:400;display:block;display:none;}
+.add_info{padding:10px;font-size:14px;font-weight:400;display:none;}
 .bbor{border-bottom:10px solid #f7f7f7 !important}
 .bbor dt{width:90% !important;border-right:0px solid #f7f7f7;border:0px solid #000}
 

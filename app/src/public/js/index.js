@@ -67,3 +67,20 @@ window.addEventListener('load', changeImage);
 // 창의 크기가 변경될 때 이미지 변경
 window.addEventListener('resize', changeImage);
 
+// 패널 헤더 요소에 클릭 이벤트 리스너 추가
+const panelHeaders = document.querySelectorAll(".tbox .img");
+const panels = document.querySelectorAll(".add_info");
+
+panelHeaders.forEach((panelHeader, index) => {
+    panelHeader.addEventListener("click", function () {
+    const panel = panels[index];
+
+    if (panel.style.display === "none" || panel.style.display === "") {
+        panel.style.display = "block";
+        panelHeader.style.transform = "rotate(180deg)";
+    } else {
+        panel.style.display = "none";
+        panelHeader.style.transform = "rotate(0deg)";
+    }
+    });
+});
