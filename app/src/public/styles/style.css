@@ -82,7 +82,7 @@ nav{
     background-color: #126ca8;
     color: white;
     line-height: 80px;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: bold;
     text-align: center;
     border-radius: 80px;
@@ -105,7 +105,7 @@ nav{
 .gnb>li{
     width: 20%;
     color: white;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 500;
     background-color: #808080;
 }
@@ -124,7 +124,7 @@ h4{
 }
 
 section{
-    padding-top: 50px;
+    padding-top: 80px;
     padding-bottom: 50px;
 }
 
@@ -319,8 +319,9 @@ table.agtb td .tbox{border-bottom:0px solid #f7f7f7;}
     bottom: 10px;
     right: 20px;
 }
+#event .gift-tiket{width: 250px;}
 #event .event-container>dt{
-    padding: 10px 20px 5px 20px;
+    padding: 30px 20px 10px 20px;
     font-size: 30px;
     font-weight: 700;
 }
@@ -343,8 +344,8 @@ table.agtb td .tbox{border-bottom:0px solid #f7f7f7;}
 
 #event .faq{margin-top: 30px;}
 #event .faq li{font-size: 18px;}
-#event .faq li label{width: 5%; display: block; float: left;}
-#event .faq li span{width: 95%; display: block; float: left;}
+#event .faq li label{width: 3%; display: block; float: left;}
+#event .faq li span{width: 97%; display: block; float: left;}
 
 #event .contact_info span{display: block; font-size: 18px; line-height: 20px;}
 #event .contact_info span a{
