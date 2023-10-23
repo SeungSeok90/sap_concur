@@ -91,7 +91,7 @@ panelHeaders.forEach((panelHeader, index) => {
 
 
 var urlParams = new URLSearchParams(window.location.search);
-var paramValue = urlParams.get("AccessRoute");
+var paramValue = urlParams.get("accessRoute");
 
 // 파라미터 값을 활용
 if (paramValue === "SAP") {
