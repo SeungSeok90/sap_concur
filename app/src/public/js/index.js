@@ -42,6 +42,7 @@ closeButtons.forEach((button, index) => {
 });
 
 
+
 const s_info = document.querySelectorAll(".s_info");
 
 s_info.forEach(function (li, idx){
@@ -61,6 +62,8 @@ function changeImage() {
     }
 }
 
+
+// 아코디언
 // 페이지 로드 시 이미지 초기화
 window.addEventListener('load', changeImage);
 
@@ -84,3 +87,54 @@ panelHeaders.forEach((panelHeader, index) => {
     }
     });
 });
+
+
+
+var urlParams = new URLSearchParams(window.location.search);
+var paramValue = urlParams.get("AccessRoute");
+
+// 파라미터 값을 활용
+if (paramValue === "SAP") {
+    var newURL = `https://event.keystonellc.kr/registrations/SAP_1121_SAP_Spend_Management_Summit,Seoul/?accessRoute=SAP`;
+    document.getElementById('regiLink').setAttribute('href', newURL);
+} else if(paramValue === "Air_Canada"){
+    // 다른 동작 수행
+    var newURL = `https://event.keystonellc.kr/registrations/SAP_1121_SAP_Spend_Management_Summit,Seoul/?accessRoute=Air_Canada`;
+    document.getElementById('regiLink').setAttribute('href', newURL);
+}else if(paramValue === "Concur_CSP"){
+    // 다른 동작 수행
+    var newURL = `https://event.keystonellc.kr/registrations/SAP_1121_SAP_Spend_Management_Summit,Seoul/?accessRoute=Concur_CSP`;
+    document.getElementById('regiLink').setAttribute('href', newURL);
+}else if(paramValue === "Concur_MDR"){
+    // 다른 동작 수행
+    var newURL = `https://event.keystonellc.kr/registrations/SAP_1121_SAP_Spend_Management_Summit,Seoul/?accessRoute=Concur_MDR`;
+    document.getElementById('regiLink').setAttribute('href', newURL);
+}else if(paramValue === "Concur_partner"){
+    // 다른 동작 수행
+    var newURL = `https://event.keystonellc.kr/registrations/SAP_1121_SAP_Spend_Management_Summit,Seoul/?accessRoute=Concur_partner`;
+    document.getElementById('regiLink').setAttribute('href', newURL);
+}else if(paramValue === "Concur_RSE"){
+    // 다른 동작 수행
+    var newURL = `https://event.keystonellc.kr/registrations/SAP_1121_SAP_Spend_Management_Summit,Seoul/?accessRoute=Concur_RSE`;
+    document.getElementById('regiLink').setAttribute('href', newURL);
+}else if(paramValue === "ISBN_CSP"){
+    // 다른 동작 수행
+    var newURL = `https://event.keystonellc.kr/registrations/SAP_1121_SAP_Spend_Management_Summit,Seoul/?accessRoute=ISBN_CSP`;
+    document.getElementById('regiLink').setAttribute('href', newURL);
+}else if(paramValue === "ISBN_Sales"){
+    // 다른 동작 수행
+    var newURL = `https://event.keystonellc.kr/registrations/SAP_1121_SAP_Spend_Management_Summit,Seoul/?accessRoute=ISBN_Sales`;
+    document.getElementById('regiLink').setAttribute('href', newURL);
+}else if(paramValue === "SAP_AE"){
+    // 다른 동작 수행
+    var newURL = `https://event.keystonellc.kr/registrations/SAP_1121_SAP_Spend_Management_Summit,Seoul/?accessRoute=SAP_AE`;
+    document.getElementById('regiLink').setAttribute('href', newURL);
+}else if(paramValue === "SAP_partner"){
+    // 다른 동작 수행
+    var newURL = `https://event.keystonellc.kr/registrations/SAP_1121_SAP_Spend_Management_Summit,Seoul/?accessRoute=SAP_partner`;
+    document.getElementById('regiLink').setAttribute('href', newURL);
+}else if(paramValue === "WebTour"){
+    // 다른 동작 수행
+    var newURL = `https://event.keystonellc.kr/registrations/SAP_1121_SAP_Spend_Management_Summit,Seoul/?accessRoute=WebTour`;
+    document.getElementById('regiLink').setAttribute('href', newURL);
+}
