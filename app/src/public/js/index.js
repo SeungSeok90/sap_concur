@@ -141,4 +141,8 @@ if (paramValue === "SAP") {
     // 다른 동작 수행
     var newURL = `https://event.keystonellc.kr/registrations/SAP_1121_SAP_Spend_Management_Summit,Seoul/?accessRoute=SAP_SDE`;
     document.getElementById('regiLink').setAttribute('href', newURL);
+}else if(paramValue === "LG_CNS"){
+    // 다른 동작 수행
+    var newURL = `https://event.keystonellc.kr/registrations/SAP_1121_SAP_Spend_Management_Summit,Seoul/?accessRoute=LG_CNS`;
+    document.getElementById('regiLink').setAttribute('href', newURL);
 }
