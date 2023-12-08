@@ -88,6 +88,17 @@ panelHeaders.forEach((panelHeader, index) => {
     });
 });
 
+document.querySelectorAll('.pageLink').forEach(function(link) {
+      link.addEventListener('click', function(event) {
+        event.preventDefault(); // 기본 동작(페이지 이동)을 막음
+        const targetUrl = link.getAttribute('data-url');
+        // 여기에 원하는 페이지 이동 로직을 추가
+        // alert(`You clicked ${link.textContent}. Going to: ${targetUrl}`);
+        // 실제로는 페이지 이동을 위한 window.location.href 또는 다른 방법을 사용
+        window.location.href = targetUrl;
+      });
+    });
+
 
 
 var urlParams = new URLSearchParams(window.location.search);

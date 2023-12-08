@@ -16,6 +16,55 @@
 
 <body>
     <div class="sticky-container">
+        
+        <style type="text/css">
+            .layer_popup img {
+                width: 100%;
+            }
+        
+            .layer_popup {
+                position: absolute;
+                width: 500px;
+                left: 35%;
+                top: 50px;
+                z-index: 100;
+            }
+        
+            .layer_popup div {
+                width: 100%;
+                padding: 2px 5px 2px 5px;
+                background-color: #000;
+                color: #fff;
+                box-sizing: border-box;
+                border: 0px solid #cc0000
+            }
+        
+            .layer_popup div .left {
+                float: left;
+                width: 50%;
+            }
+        
+            .layer_popup div .right {
+                float: left;
+                width: 50%;
+                color: #fff;
+                text-align: right;
+            }
+        
+            .layer_popup div .right a {
+                color: #fff
+            }
+        </style>
+        <div class="layer_popup" id="layer_pop" style="display: inline;">
+        
+            <a href="https://sapspendmanagement.com/conference"><img src="/images/popup.png" border="0"></a>
+        
+            <div>
+                <div class="left pop"><input type="checkbox" name="pop_today" id="pop_today">오늘 하루 이 창 열지 않음</div>
+                <div class="right pop"><a href="javascript:closeWin();">닫기</a></div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
         <header>
             <div class="header-container">
                 <div class="inner">
@@ -47,6 +96,7 @@
                 <li><a href="#agenda">아젠다</a></li>
                 <li><a href="#sponsor">후원사</a></li>
                 <li><a href="#event">이벤트/행사안내</a></li>
+                <li><a href="#" class="pageLink" data-url="https://sapspendmanagement.com/conference#conference">행사 둘러보기</a></li>
             </ul>
         </nav>
         <main>
@@ -928,6 +978,21 @@
         AOS.init();
     </script>
     <script src="/js/index.js"></script>
+    <script language="Javascript" type="text/javascript">
+               
+            function setCookie(name, value, expirehours) {
+                var todayDate = new Date();
+                todayDate.setHours(todayDate.getHours() + expirehours);
+                document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+            }
+        function closeWin() {
+            if (document.getElementById("pop_today").checked) {
+                setCookie("ncookie", "done", 24);
+            }
+            document.getElementById('layer_pop').style.display = "none";
+        }
+
+    </script>
 </body>
 
 </html>

@@ -441,6 +441,42 @@ table.agtb td .tbox{border-bottom:0px solid #f7f7f7;}
     bottom: 13px;} 
 
 
+#conference .inner ul.link {margin-left:-1%;width:102%;display:block}
+#conference .inner ul.link li{float:left;width:25%;text-align:center;padding:5px 1%}
+#conference .inner ul.link li a{background-color:#008fd3;font-size:23px;color:#fff;display:block;padding:15px}
+
+#conference .inner h5{margin:40px 0 30px;display:block}
+#conference .inner h5 label{float:left;margin-right:10px}
+#conference .inner h5 span{font-size:22px;line-height:24px;display:block}
+#conference .inner h5.sketch span{padding-top:10px}
+#conference .inner ul.thum li{float:left;width:25%;padding:5px 5px 30px}
+#conference .inner ul.thum li img{max-width:283px;width:100%;}
+
+
+#conference .inner .container {
+  width: 100%;
+  max-width:580px;
+  background-color: #fff;
+}
+
+#conference .inner .video {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding-top: 56.5%;
+}
+
+#conference .inner .video iframe {
+  z-index: 1;
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+
+
 footer{
     width: auto;
     height: 84px;
