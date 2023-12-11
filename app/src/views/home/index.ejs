@@ -55,16 +55,16 @@
                 color: #fff
             }
         </style>
-        <!-- <div class="layer_popup" id="layer_pop" style="display: inline;">
+        <div class="layer_popup" id="layer_pop" style="display: inline;">
         
-            <a href="https://sapspendmanagement.com/conference"><img src="/images/popup.png" border="0"></a>
+            <a href="#conference"><img src="/images/popup.png" border="0"></a>
         
             <div>
                 <div class="left pop"><input type="checkbox" name="pop_today" id="pop_today">오늘 하루 이 창 열지 않음</div>
                 <div class="right pop"><a href="javascript:closeWin();">닫기</a></div>
                 <div class="clearfix"></div>
             </div>
-        </div> -->
+        </div>
         <header>
             <div class="header-container">
                 <div class="inner">
@@ -96,10 +96,12 @@
                 <li><a href="#agenda">아젠다</a></li>
                 <li><a href="#sponsor">후원사</a></li>
                 <li><a href="#event">이벤트/행사안내</a></li>
+                <li><a href="#conference">행사 둘러보기</a></li>
                 <!-- <li><a href="#" class="pageLink" data-url="https://sapspendmanagement.com/conference#conference">행사 둘러보기</a></li> -->
             </ul>
         </nav>
         <main>
+            
             <section id="about">
                 <div class="inner">
                     <h4 data-aos="fade-up">인사말</h4>
@@ -966,6 +968,25 @@
         
                 </div>
             </section>
+            <section id="conference">
+                <div class="inner">
+                    <h4 data-aos="fade-up">행사 둘러보기</h4>
+            
+                    <div class="clearfix"></div>
+                    <h5><span>불확실성의 한계를 뛰어넘는 인텔리전트 지출 혁신</span>
+                        <div class="clearfix"></div>
+                    </h5>
+                    <div class="clearfix"></div>
+                    <div class="contaner">
+                        <div class="video">
+                            <iframe width="1280" height="720" src="https://www.youtube.com/embed/3U6osTgObto"
+                                title="SAP Spend Management Summit Seoul 행사 하이라이트 영상" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
             <div class="inner">
@@ -980,11 +1001,11 @@
     <script src="/js/index.js"></script>
     <script language="Javascript" type="text/javascript">
                
-            function setCookie(name, value, expirehours) {
-                var todayDate = new Date();
-                todayDate.setHours(todayDate.getHours() + expirehours);
-                document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
-            }
+        function setCookie(name, value, expirehours) {
+            var todayDate = new Date();
+            todayDate.setHours(todayDate.getHours() + expirehours);
+            document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+        }
         function closeWin() {
             if (document.getElementById("pop_today").checked) {
                 setCookie("ncookie", "done", 24);
